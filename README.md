@@ -1,2 +1,0 @@
-# phatsauceband.github.io
-Webpage
