@@ -9,11 +9,17 @@ body{
 }
 
 footer{
-    height: 15vh;
+    height: 10vh;
     background-color: #f8f9fa;
 }
 
 .footer-logos{
+    height: 10vh;
     display: grid;
-    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.footer-logos img{
+    margin: 0rem 0.75rem;
 }
