@@ -1,20 +1,23 @@
 body{
     text-align: center;
+    background-color: purple !important; /* Temp for purposes of viewing the container */
 }
 
 #content{
-    height: 85vh;
+    height: 150vh;
     display: grid;
     align-content: center;
+    background-color: rebeccapurple;
+    color: white;
 }
 
 footer{
-    height: 10vh;
+    height: 116px;
     background-color: #f8f9fa;
 }
 
 .footer-logos{
-    height: 10vh;
+    height: 116px;
     display: grid;
     align-content: center;
     text-align: center;
@@ -22,4 +25,10 @@ footer{
 
 .footer-logos img{
     margin: 0rem 0.75rem;
+}
+
+/* BOOTSTRAP OVERRIDES */
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0) !important;
 }
