@@ -2,14 +2,6 @@ body{
     text-align: center;
 }
 
-#content{
-    height: 150vh;
-    display: grid;
-    align-content: center;
-    background-color: rebeccapurple;
-    color: white;
-}
-
 /* Landing Image */
 .landing--container{
     height: calc(100vh - 100px - 0.5rem); /* Change based on pixel height of logo in nav */
@@ -31,6 +23,22 @@ body{
     width: 400px;
 }
 
+.landing--blurb{
+    text-align: center;
+}
+
+.landing--blurb-contentBlocks{
+    padding-top: 4rem;
+}
+
+.landing--blurb-contentBlocks h5{
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+.landing--blurb-author{
+    color: rgb(148, 148, 148);
+}
+
 /*Covid Alert Banner - Overriding Bootstrap*/
 .banner--covid{
     position: fixed !important;
@@ -41,19 +49,37 @@ body{
 } 
 
 footer{
-    height: 116px;
-    background-color: #f8f9fa;
+    margin-top: 5rem;
+    background-color: rgb(83,79,78);
+    color: white;
+    font-size: 0.875rem;
 }
 
-.footer-logos{
-    height: 116px;
-    display: grid;
-    align-content: center;
-    text-align: center;
+footer p{
+    margin: 0.5rem;
+    padding: 0;
 }
 
 .footer-logos img{
-    margin: 0rem 0.75rem;
+    display: inline-block;
+}
+
+.footer-logos img{
+    margin: 0rem 0.75rem 0.5rem 0.75rem;
+}
+
+.footer--panel{
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer--devCol{
+    text-align: center;
+    padding: .75rem 0rem;
+}
+
+.footer--devCol-container{
+    background-color: rgb(22, 22, 22);
 }
 
 /* BOOTSTRAP OVERRIDES */
