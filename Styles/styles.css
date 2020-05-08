@@ -1,6 +1,5 @@
 body{
     text-align: center;
-    background-color: purple !important; /* Temp for purposes of viewing the container */
 }
 
 #content{
@@ -10,6 +9,36 @@ body{
     background-color: rebeccapurple;
     color: white;
 }
+
+/* Landing Image */
+.landing--container{
+    height: calc(100vh - 100px - 0.5rem); /* Change based on pixel height of logo in nav */
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../Images/Desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landing--logoContainer{
+    margin-top: 7rem;
+    text-align: center;
+}
+.landing--logoContainer img{
+    margin: 0rem 1rem;
+    height: 170px;
+    width: 400px;
+}
+
+/*Covid Alert Banner - Overriding Bootstrap*/
+.banner--covid{
+    position: fixed !important;
+    z-index: 1000;
+    width: calc(100% - 2rem);
+    margin: .5rem 1rem;
+
+} 
 
 footer{
     height: 116px;
@@ -29,6 +58,14 @@ footer{
 
 /* BOOTSTRAP OVERRIDES */
 
+/* Remove hamburger menu logo */
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,0) !important;
+}
+
+/* Adding spacing between nav items */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding: 0rem 1rem !important;
+    }
 }
