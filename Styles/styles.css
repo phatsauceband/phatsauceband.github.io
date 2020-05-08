@@ -27,16 +27,56 @@ body{
     text-align: center;
 }
 
-.landing--blurb-contentBlocks{
+.landing--blurb-summary{
     padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
-.landing--blurb-contentBlocks h5{
+.landing--blurb-summary hr{
+    margin: 4rem 0rem;
+}
+
+.landing--blurb-summary h4{
     font-weight: normal;
     margin-bottom: 1.5rem;
 }
-.landing--blurb-author{
+
+.landing--blurb-summary h6{
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.landing--card-author{
     color: rgb(148, 148, 148);
+}
+
+.landing--videos{
+    margin: 4rem 0rem 0rem 0rem;
+}
+
+/* Bootstrap override to center videos with side spacing */
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video{
+    width: 92% !important;
+    left: 4% !important;
+}
+
+/* Adjusting the height between each landing card */
+.landing--card{
+    margin-top: 2rem;
+}
+
+/* Center content within landing cards */
+.landing--card-content{
+    height: 100%;
+    padding-bottom: 1rem; /* mirror padding on p tags in landing--card p */
+    display: grid !important; /* Override bootstrap*/
+    align-content: center;
+}
+
+.landing--card p{
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
 }
 
 /*Covid Alert Banner - Overriding Bootstrap*/
