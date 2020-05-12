@@ -149,6 +149,42 @@ footer p{
     margin: 2rem 1rem 0rem 1rem;
 }
 
+/* Repertoire */
+
+.repertoire--listContainer{
+    height: 100%;
+    display: grid !important; /* Override bootstrap*/
+    align-self: center;
+    font-size: .75rem;
+}
+
+.repertoire--artist{
+    color: rgb(148, 148, 148);
+}
+
+.repertoire--songList{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.repertoire--songList div{
+    margin: 0rem .25rem;
+}
+
+.repertoire--downloadContainer p{
+    margin: 0;
+    padding: 0;
+}
+
+.repertoire--rowContainer{
+    margin-top: 3rem;
+}
+
+.repertoire---header{
+    margin: 3rem 0rem;
+}
+
 /* BOOTSTRAP OVERRIDES */
 
 /* Remove hamburger menu logo */
