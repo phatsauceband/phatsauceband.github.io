@@ -185,6 +185,36 @@ footer p{
     margin: 3rem 0rem;
 }
 
+/* Testimonials */
+.testimonials--testimonialsContainer{
+    margin: 4rem 0rem;
+}
+
+.testimonials--testimonialsContainer img{
+    width:100%;
+}
+
+.testimonials--testimonialsContainer .col-sm-6{
+    padding:0 !important; /* Bootstrap override to make images line up when the text is not taller than the image */
+}
+
+.testimonials--testimonialsContainer p{
+    padding: 1.5rem;
+}
+
+.testimonials--header{
+    margin: 3rem 0rem;
+}
+
+.testimonials--author{
+    color: rgb(148, 148, 148);
+}
+
+.testimonials--pastVenuesContainer img{
+    width: 100%;
+}
+
+
 /* BOOTSTRAP OVERRIDES */
 
 /* Remove hamburger menu logo */
