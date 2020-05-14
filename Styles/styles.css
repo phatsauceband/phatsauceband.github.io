@@ -6,6 +6,42 @@ nav{
     box-shadow: 0px 0px 5px #888888;
 }
 
+/* Globals */
+
+.globals--headers{
+    margin: 3rem 0rem;
+}
+
+.globals--highlights{
+    color: rgb(148, 148, 148);
+}
+
+.globals--containerSpacing{
+    margin-top: 4rem;
+}
+
+/* Watch Now Overlay */
+
+.watchNow--overlay{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+    display: none;
+    align-content: center;
+    overflow: hidden;
+    color: white;
+}
+
+.watchNow--closeBTN:hover{ 
+    text-decoration: none;
+}
+
+
 /* Landing Image */
 .landing--container{
     height: calc(100vh - 100px - 0.5rem); /* Change based on pixel height of logo in nav */
@@ -146,7 +182,7 @@ footer p{
 }
 
 .services--circleLogo img{
-    margin: 2rem 1rem 0rem 1rem;
+    margin: 2rem 2rem 0rem 2rem;
 }
 
 /* Repertoire */
@@ -214,6 +250,14 @@ footer p{
     width: 100%;
 }
 
+/* Contact */
+.contact--container{
+    margin: 4rem 0rem;
+}
+
+.contact--container img{
+    width: 75%;
+}
 
 /* BOOTSTRAP OVERRIDES */
 

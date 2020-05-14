@@ -14,6 +14,32 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
+        <!-- Watch Now overlay -->
+        <div id="watchNow" class="watchNow--overlay text-center">
+            <div class="container">
+                <!-- Button to close the overlay navigation -->
+                <button type="button" class="btn btn-outline-light" onclick="closeWatch()">Close Window</button>
+            
+                <!-- Overlay content -->
+                <div class="globals--containerSpacing">
+                    <div class="embed-responsive embed-responsive-16by9 ">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sC8fOO-8uJo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                    </div> 
+                </div> 
+
+
+
+                <div class="globals--containerSpacing text-center">
+                    <h5>Want more?</h5>
+                    <p>
+                        Click <a href="index.html#landingvideos" onclick="closeWatch()">here</a> to watch more videos on this webpage
+                        or visit our <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ">Youtube Page</a> to see all Phat Sauce content.
+                    </p>
+                    <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ"><img src="Images/ytlogo.webp" width="30px" height="30px" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
             <div class="container">
@@ -30,7 +56,7 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                     <ul class="navbar-nav ml-auto flex-nowrap">
                         <li class="nav-item">
-                            <a href="index.html#landingvideos" class="nav-link m-2 menu-item nav-active">WATCH NOW!</a>
+                            <button type="button" onclick="openWatch()" class="btn btn-outline-danger">WATCH NOW!</button>
                         </li>
                         <li class="nav-item">
                             <a href="services.html" class="nav-link m-2 menu-item">SERVICES</a>
@@ -42,10 +68,10 @@
                             <a href="testimonials.html" class="nav-link m-2 menu-item">TESTIMONIALS</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link m-2 menu-item">EPK</a>
+                            <a href="epk.html" class="nav-link m-2 menu-item">EPK</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link m-2 menu-item">CONTACT</a>
+                            <a href="contact.html" class="nav-link m-2 menu-item">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -54,15 +80,24 @@
 
         <!-- Content -->
         <div class="container text-center repertoire---header">
-            <h1>Sample Repertoire</h1>
+            <h1>SAMPLE REPERTOIRE</h1>
         </div>
 
         <div style="height: 5vh; background-color: darkslateblue;"></div>
 
         <div class="container">
+            <div class="globals--containerSpacing text-center">
+                <p class="lead">
+                    Here lies a paragraph that has the purpose to describe what is on this page. 
+                    What is outline is mainly that you are a mug! Should you wish to contest this statement please navigate to our contact page.
+                </p>
+            </div>
+            
+            <hr class="globals--containerSpacing">
+
             <!-- Lists -->
             <div class="row repertoire--rowContainer">
-                <div class="col-sm-4 repertoire--listContainer">
+                <div class="col-sm-6 repertoire--listContainer">
                     <h6>POPULAR HITS</h6>
                     <p>
                         Shut Up And Dance <span class="repertoire--artist">WALK THE MOON</span><br>
@@ -81,7 +116,7 @@
                         New Rules <span class="repertoire--artist">DUA LIPA</span><br>
                     </p>
                 </div>
-                <div class="col-sm-4 repertoire--listContainer">                    
+                <div class="col-sm-6 repertoire--listContainer">                    
                     <h6>CLASSIC HITS</h6>
                     <p>
                         Sweet Caroline <span class="repertoire--artist">NEIL DIAMOND</span><br>
@@ -101,7 +136,10 @@
                         Ain't Nobody <span class="repertoire--artist">CHAKA KHAN</span><br>
                     </p>
                 </div>
-                <div class="col-sm-4 repertoire--listContainer">
+            </div>
+
+            <div class="row repertoire--rowContainer">
+                <div class="col-sm-6 repertoire--listContainer">
                     <h6>PUB HITS</h6>
                     <p>
                         Wonderwall <span class="repertoire--artist">OASIS</span><br>
@@ -121,9 +159,7 @@
                         Run To Paradise <span class="repertoire--artist">THE CHOIRBOYS</span><br>
                     </p>
                 </div>
-            </div>
-            <div class="row repertoire--rowContainer">
-                <div class="col-sm-4 repertoire--listContainer">
+                <div class="col-sm-6 repertoire--listContainer">
                     <h6 class="text-center">EASY LISTENING</h6>
                     <div class="repertoire--songList">
                        <div class="text-right">Isn't She Lovely</div>
@@ -186,7 +222,9 @@
                         <div class="text-left"><span class="repertoire--artist">RED HOT CHILI PEPPERS</span><br></div>
                     </div>  
                 </div>
-                <div class="col-sm-4 repertoire--listContainer">
+            </div>
+            <div class="row repertoire--rowContainer">
+                <div class="col-sm-6 repertoire--listContainer">
                     <h6 class="text-center">SLOW DANCE</h6>
                     <div class="repertoire--songList">
                        <div class="text-right">Can't Help Falling In Love</div>
@@ -249,7 +287,7 @@
                         <div class="text-left"><span class="repertoire--artist">DORIS DAY</span><br></div>
                     </div>
                 </div>
-                <div class="col-sm-4 repertoire--listContainer">
+                <div class="col-sm-6 repertoire--listContainer">
                     <h6 class="text-center">JAZZ, BLUES & FUNK</h6>
                     <div class="repertoire--songList">
                        <div class="text-right">Route 66</div>

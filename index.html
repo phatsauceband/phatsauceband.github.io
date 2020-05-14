@@ -14,6 +14,32 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
+        <!-- Watch Now overlay -->
+        <div id="watchNow" class="watchNow--overlay text-center">
+            <div class="container">
+                <!-- Button to close the overlay navigation -->
+                <button type="button" class="btn btn-outline-light" onclick="closeWatch()">Close Window</button>
+            
+                <!-- Overlay content -->
+                <div class="globals--containerSpacing">
+                    <div class="embed-responsive embed-responsive-16by9 ">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sC8fOO-8uJo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                    </div> 
+                </div> 
+
+
+
+                <div class="globals--containerSpacing text-center">
+                    <h5>Want more?</h5>
+                    <p>
+                        Click <a href="index.html#landingvideos" onclick="closeWatch()">here</a> to watch more videos on this webpage
+                        or visit our <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ">Youtube Page</a> to see all Phat Sauce content.
+                    </p>
+                    <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ"><img src="Images/ytlogo.webp" width="30px" height="30px" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
             <div class="container">
@@ -30,7 +56,7 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                     <ul class="navbar-nav ml-auto flex-nowrap">
                         <li class="nav-item">
-                            <a href="index.html#landingvideos" class="nav-link m-2 menu-item nav-active">WATCH NOW!</a>
+                            <button type="button" onclick="openWatch()" class="btn btn-outline-danger">WATCH NOW!</button>
                         </li>
                         <li class="nav-item">
                             <a href="services.html" class="nav-link m-2 menu-item">SERVICES</a>
@@ -42,10 +68,10 @@
                             <a href="testimonials.html" class="nav-link m-2 menu-item">TESTIMONIALS</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link m-2 menu-item">EPK</a>
+                            <a href="epk.html" class="nav-link m-2 menu-item">EPK</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link m-2 menu-item">CONTACT</a>
+                            <a href="contact.html" class="nav-link m-2 menu-item">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -53,8 +79,8 @@
         </nav>
 
         <!-- Discount Banner -->
-        <div class="alert alert-danger alert-dismissible fade show banner--covid" role="alert">
-            <strong>Post Pandemic Discount!</strong> Contact us for discount event prices.
+        <div class="alert alert-primary alert-dismissible fade show banner--covid" role="alert">
+            <strong>Post Pandemic Discount!</strong> <a href="contact.html">Contact us</a> for discount event prices.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -74,7 +100,7 @@
                 <h4><b>Bespoke musical entertainment, perfect for any party, function or wedding...</b></h4>
                 <hr>
                 <h6>Interested in hearing us play?</h6>
-                <button type="button" class="btn btn-outline-danger">Watch Now!</button>
+                <button type="button" onclick="openWatch()" class="btn btn-outline-danger">Watch Now!</button>
             </div>
 
             <div class="row">
