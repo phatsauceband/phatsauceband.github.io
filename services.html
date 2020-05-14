@@ -27,9 +27,7 @@
                     </div> 
                 </div> 
 
-
-
-                <div class="globals--containerSpacing text-center">
+                <div class="globals--containerSpacing text-center globals--txt-thin">
                     <h5>Want more?</h5>
                     <p>
                         Click <a href="index.html#landingvideos" onclick="closeWatch()">here</a> to watch more videos on this webpage
@@ -80,17 +78,17 @@
 
         <!-- Header-->
         <div class="container text-center globals--headers">
-            <h1>SERVICES</h1>
+            <h1 class="display-3">SERVICES</h1>
         </div>
 
         <div style="height: 5vh; background-color: darkslateblue;"></div>
 
         <!-- Content -->
-        <div class="container">
+        <div class="container globals--txt-thin">
             <!-- Summary -->
             <div class="text-center services--contentBlocks">
-                <h3>Title for Paragraph</h3>
-                <p>
+                <h2 class="globals--txt-thin">The perfect compliment to your upcoming event.</h2>
+                <p class="globals--textSpacing-lrg">
                     This paragraph will be a description of Phat Sauce's service - I'll have to find a better way to word it. 
                     This paragraph will be a description of Phat Sauce's service - I'll have to find a better way to word it.
                     This paragraph will be a description of Phat Sauce's service - I'll have to find a better way to word it.
@@ -129,23 +127,25 @@
             </div>
 
             <div class="text-center services--contentBlocks">
-                <p>Get in touch for a quote, or any further information.</p>
-                <button type="button" class="btn btn-secondary">CONTACT</button>
+                <h4 class="globals--txt-thin">Get in touch for a quote, or any further information.</h4>
+                <form action="contact.html">
+                    <button type="submit" class="btn btn-outline-secondary globals--textSpacing">CONTACT</button> 
+                </form>
             </div>
             <hr class="globals--containerSpacing">
             <div class="text-center services--contentBlocks">
-                <h1>Not Sure?</h1>
-                <h4>Some examples to get you started:</h4>
+                <h1 class="globals--txt-bold">Not Sure?</h1>
+                <h4 class="globals--txt-thin globals--textSpacing">Some examples to get you started:</h4>
             </div>
 
             <!-- Tiles -->
             <div class="services--contentBlocks">
                 <div class="row align-items-center services--tiles">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 services--tiles-img">
                         <img src="Images/sixPiece.jpg" width="100%">
                     </div>
-                    <div class="col-sm-6">
-                        <h6>PARTY BAND</h6>
+                    <div class="col-sm-6 services--tiles-text">
+                        <h5 class="globals--txt-bold">PARTY BAND</h5>
                         <p>
                             Usually a 4-6 piece band, this will be information about what you will get with the party band.
                             Usually a 4-6 piece band, this will be information about what you will get with the party band.
@@ -155,11 +155,11 @@
                     </div>
                 </div>
                 <div class="row align-items-center services--tiles">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 services--tiles-img">
                         <img src="Images/fourPiece.jpg" width="100%">
                     </div>
-                    <div class="col-sm-6">
-                        <h6>GROOVE BAND</h6>
+                    <div class="col-sm-6 services--tiles-text">
+                        <h5 class="globals--txt-bold">GROOVE BAND</h5>
                         <p>
                             Perfect for background music, this band (usually a trio or quartet) is ideal for your upcoming lowkey function.
                             Perfect for background music, this band (usually a trio or quartet) is ideal for your upcoming lowkey function.
@@ -168,11 +168,11 @@
                     </div>
                 </div>
                 <div class="row align-items-center services--tiles">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 services--tiles-img">
                         <img src="Images/onePiece.jpg" width="100%">
                     </div>
-                    <div class="col-sm-6">
-                        <h6>DUO or SOLO ACT</h6>
+                    <div class="col-sm-6 services--tiles-text">
+                        <h5 class="globals--txt-bold">DUO or SOLO ACT</h5>
                         <p>
                             I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
                             me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your
@@ -181,20 +181,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
 
+        <hr class="globals--containerSpacing">
+        <!-- <div class="globals--containerSpacing" style="height: 5vh; background-color: darkslateblue;"></div> -->
 
-        <div class="globals--containerSpacing" style="height: 5vh; background-color: darkslateblue;"></div>
-
-        <div class="container">
+        <!-- <div class="container globals--txt-thin"> -->
             <!-- Management Options -->
             <div class="services--contentBlocks text-center">
-                <h1>UNDER THE SAME MANAGEMENT</h1>
-                <div class="services--circleLogo">
+                <h1 class="globals--txt-thin">UNDER THE SAME MANAGEMENT</h1>
+                <!-- <div class="services--circleLogo">
                     <img src="Images/circleLogo.png">
                     <img src="Images/circleLogo.png">
                     <img src="Images/circleLogo.png">
-                </div>
+                </div> -->
             </div>
 
 
@@ -212,6 +212,7 @@
                 </div>
 
                 <div class="row align-items-center">
+                    <div class="col-sm-4"><img src="Images/suLogo.jpg" width="100%"></div>
                     <div class="col-sm-8">
                         <p>
                             I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
@@ -219,26 +220,32 @@
                             know a little more about you.
                         </p>
                     </div>               
-                    <div class="col-sm-4"><img src="Images/suLogo.jpg" width="100%"></div>
                 </div> 
             </div>
 
             <div class="services--contentBlocks text-center">
                 <p>
-                    If you are interested in any of our available servies, please contact us with the details found via the button below.
+                    If you are interested in any of our available services, please contact us with the details found via the button below.
                 </p>
-                <button type="button" class="btn btn-secondary">CONTACT</button>
+                <form action="contact.html">
+                    <button type="submit" class="btn btn-outline-secondary">CONTACT</button>
+                </form>
             </div>
         </div>
 
-
-      
         <!-- Footer -->
+        <div class="globals--containerSpacing">
+            <svg width='100%' height='5vh' viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="0,2 0,100 100,100 100,0 25,75 " fill="black"/>
+                <polygon points="0,20 0,100 100,100 100,20 25,95 " fill="#89528c"/>
+            </svg>
+        </div>
+
         <footer>
-            <div class="container">
+            <div class="container globals--txt-thin">
                 <div class="row">
                   <div class="col-sm footer--panel">
-                    <h6>Connect</h6>
+                    <h6 class="globals--txt-thin">Connect</h6>
                     <p>Find us at your favourite social platform below.</p>
                     <div class="footer-logos">
                         <a href="https://www.instagram.com/phatsauceband/"><img src="Images/iglogo.webp" width="30px" height="30px" alt="Instagram"></a>
@@ -247,16 +254,16 @@
                     </div>
                   </div>
                   <div class="col-sm footer--panel">
-                    <h6>Enquiries</h6>
-                    <p><b>Email: </b><a href="mailto:phatsauceband@gmail.com">phatsauceband@gmail.com</a></p>
-                    <p><b>Phone: </b><a href="tel:+61-426-119-544">(+61) 426 119 544</a></p>
+                    <h6 class="globals--txt-thin">Enquiries</h6>
+                    <p>Email: <a href="mailto:phatsauceband@gmail.com" class="globals--links">phatsauceband@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+61-426-119-544" class="globals--links">(+61) 426 119 544</a></p>
                   </div>
                 </div>
             </div>
 
             <div class="footer--devCol-container">
-                <div class="container footer--devCol">
-                    Developed by <a href="https://matttopping.com">Matt Topping</a>
+                <div class="container footer--devCol globals--txt-thin">
+                    Developed by <a href="https://matttopping.com" class="globals--links">Matt Topping</a>
                 </div>
             </div>
         </footer>

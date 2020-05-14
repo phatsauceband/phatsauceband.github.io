@@ -6,6 +6,10 @@ nav{
     box-shadow: 0px 0px 5px #888888;
 }
 
+hr{
+    border-top: 1px solid rgba(0,0,0,.2) !important;
+}
+
 /* Globals */
 
 .globals--headers{
@@ -20,13 +24,58 @@ nav{
     margin-top: 4rem;
 }
 
+.globals--textSpacing{
+    margin-top: 0.5rem;
+}
+
+.globals--textSpacing-lrg{
+    margin-top: 1.5rem;
+}
+
+.globals--txt-thin{
+    font-weight: 300;
+}
+
+.globals--txt-bold{
+    font-weight: 400;
+}
+
+.globals--links{
+    color: #d4a9d1;
+    text-decoration: none;
+}
+
+.globals--links:hover{
+    color: rgb(120, 0, 0);
+    text-decoration: none;
+}
+.globals--links:active{
+    color: rgb(50, 0, 0);
+    text-decoration: none;
+}
+.globals--links:visited{
+    color: rgb(100, 0, 0);
+    text-decoration: none;
+}
+
+.globals--links-underlined{
+    text-decoration: underline !important;
+}
+
+.globals--links-underlined:hover{
+    text-decoration: underline !important;
+}
+.globals--links-underlined:active{
+    text-decoration: underline !important;
+}
+
 /* Watch Now Overlay */
 
 .watchNow--overlay{
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100000;
+    z-index: 5000;
     background-color: rgb(0,0,0); /* Black fallback color */
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -41,6 +90,12 @@ nav{
     text-decoration: none;
 }
 
+/* .watchNow--closer{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 4500;
+} */
 
 /* Landing Image */
 .landing--container{
@@ -77,13 +132,17 @@ nav{
 }
 
 .landing--blurb-summary h4{
-    font-weight: normal;
+    /* font-weight: normal; */
     margin-bottom: 1.5rem;
 }
 
 .landing--blurb-summary h6{
     font-weight: normal;
     margin-bottom: 1.5rem;
+}
+
+.landing--btn-spacing{
+    margin-top: 1rem;
 }
 
 .landing--card-author{
@@ -129,8 +188,8 @@ nav{
 } 
 
 footer{
-    margin-top: 5rem;
-    background-color: rgb(83,79,78);
+    /* margin-top: 5rem; */
+    background-color: #89528c;
     color: white;
     font-size: 0.875rem;
 }
@@ -175,11 +234,21 @@ footer p{
 
 .services--tiles{
     margin: 1rem 0rem;
+    background-color: #e9ecef;
 }
 
-.services--tiles img{
-    margin: 1rem 0rem;
+.services--tiles-img{
+    padding: 1rem;
 }
+
+.services--tiles-text{
+    padding: 1rem;
+
+}
+
+/* .services--tiles img{
+    margin: 1rem 0rem;
+} */
 
 .services--circleLogo img{
     margin: 2rem 2rem 0rem 2rem;
@@ -250,6 +319,11 @@ footer p{
     width: 100%;
 }
 
+.testimonials--cards{
+    background-color: #e9ecef;
+    margin: 1rem 0;
+}
+
 /* Contact */
 .contact--container{
     margin: 4rem 0rem;
@@ -257,6 +331,18 @@ footer p{
 
 .contact--container img{
     width: 75%;
+}
+
+.contact--managementContainer img{
+    width: 100%;
+}
+
+.contact--contentSpacing{
+    margin-top: 1.5rem;
+}
+
+.contact--textSpacing{
+    margin-top: 0.5rem;
 }
 
 /* BOOTSTRAP OVERRIDES */
