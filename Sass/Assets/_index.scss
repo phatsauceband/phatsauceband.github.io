@@ -1,0 +1,50 @@
+@import "variables";
+
+.i__landing-img{
+    height: calc(100vh - 100px - 0.5rem); /* Change based on pixel height of logo in nav */
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../Images/Desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    & img{ //Phat Sauce Logo Scaling
+        margin: 0rem 1rem;
+        height: 170px;
+        width: 400px;
+    }
+}
+
+.i__landing-logo{
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.i__blurb-summary{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.i__blurb-btn{
+    margin-top: 1rem;
+}
+
+.i__card{ //Adjusting the height between each landing card
+    margin-top: 2rem;
+    &p{
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+    }
+}
+
+.i__card-content{ //Center content within landing cards
+    height: 100%;
+    padding-bottom: 1rem; /* mirror padding on p tags in landing--card p */
+    display: grid !important; /* Override bootstrap*/
+    align-content: center;
+}
+
+.i__videos{
+    margin: 4rem 0rem 0rem 0rem;
+}

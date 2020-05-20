@@ -1,0 +1,278 @@
+nav {
+  -webkit-box-shadow: 0px 0px 5px #888888;
+          box-shadow: 0px 0px 5px #888888;
+}
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.wn__overlay {
+  height: 100vh;
+  width: 100%;
+  z-index: 5000;
+  position: fixed;
+  display: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: white;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+/* Bootstrap override to center videos with side spacing */
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+  width: 92% !important;
+  left: 4% !important;
+}
+
+footer {
+  background-color: #89528c;
+  color: white;
+  font-size: 0.875rem;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0rem 0.75rem 0.5rem 0.75rem;
+}
+
+.footer__panel {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer__logos img {
+  display: inline-block;
+  margin: 0rem 0.75rem 0.5rem 0.75rem;
+}
+
+.footer__dev {
+  padding: .75rem 0rem;
+}
+
+.footer__dev-container {
+  margin-top: 2rem;
+  background-color: black;
+}
+
+.g__container-spacer {
+  margin-top: 4rem;
+}
+
+.g__text-spacer {
+  margin-top: 0.5rem;
+}
+
+.g__text-spacerlrg {
+  margin-top: 1.5rem;
+}
+
+.g__txt-thin {
+  font-weight: 300;
+}
+
+.g__txt-bold {
+  font-weight: 400;
+}
+
+.g__banner {
+  position: fixed !important;
+  z-index: 1000;
+  width: calc(100% - 2rem);
+  margin: .5rem 1rem;
+}
+
+.g__links-light {
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: purple;
+}
+
+.g__links-light:hover {
+  text-decoration: none;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.g__links-light:focus {
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(150, 40, 150, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(150, 40, 150, 0.5);
+}
+
+.g__links-light:hover {
+  color: blue;
+}
+
+.g__links-dark {
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: lightgrey;
+}
+
+.g__links-dark:hover {
+  text-decoration: none;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.g__links-dark:focus {
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(150, 40, 150, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(150, 40, 150, 0.5);
+}
+
+.g__links-dark:hover {
+  color: grey;
+}
+
+.g__headers {
+  margin: 3rem 0rem;
+}
+
+.g__author {
+  color: grey;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0rem 1rem !important;
+  }
+}
+
+.i__landing-img {
+  height: calc(100vh - 100px - 0.5rem);
+  /* Change based on pixel height of logo in nav */
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../Images/Desk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.i__landing-img img {
+  margin: 0rem 1rem;
+  height: 170px;
+  width: 400px;
+}
+
+.i__landing-logo {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.i__blurb-summary {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.i__blurb-btn {
+  margin-top: 1rem;
+}
+
+.i__card {
+  margin-top: 2rem;
+}
+
+.i__cardp {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.i__card-content {
+  height: 100%;
+  padding-bottom: 1rem;
+  /* mirror padding on p tags in landing--card p */
+  display: -ms-grid !important;
+  display: grid !important;
+  /* Override bootstrap*/
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.i__videos {
+  margin: 4rem 0rem 0rem 0rem;
+}
+
+.s__tiles {
+  margin: 1rem 0rem;
+  background-color: #e9ecef;
+}
+
+.s__tiles-img {
+  padding: 1rem;
+}
+
+.s__tiles-text {
+  padding: 1rem;
+}
+
+.r__row-container {
+  margin-top: 3rem;
+}
+
+.r__songlist {
+  font-size: .75rem;
+}
+
+.r__songlist p {
+  margin: 0;
+  padding: 0;
+}
+
+.r__songline {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.r__songline div {
+  margin: 0rem .25rem;
+}
+
+.r__download-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.t__cards {
+  background-color: #e9ecef;
+  margin: 1rem 0;
+}
+
+.t__cards img {
+  width: 100%;
+}
+
+.t__cards .col-sm-6 {
+  padding: 0 !important;
+  /* Bootstrap override to make images line up when the text is not taller than the image */
+}
+
+.t__cards p {
+  padding: 1.5rem;
+}
+
+.t__pv-container img {
+  width: 100%;
+}
+
+.c__management-container img {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

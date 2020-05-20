@@ -1,0 +1,29 @@
+// COLOURS
+$primary: #89528c;
+$secondary: black;
+
+$link__light: purple;
+$link__light-hover: blue;
+
+$link__dark: lightgrey;
+$link__dark-hover: grey;
+
+$btn-filled: black;
+
+$author: grey;
+
+// Mixins
+@mixin links{
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover{
+        text-decoration: none;
+        transform:translateY(2px);
+    }
+    // &:active{}
+    &:focus{
+        text-decoration: none;
+        box-shadow: 0 0 0 0.2rem rgba(150, 40, 150, 0.5);
+    }
+    // &:visited{}
+}

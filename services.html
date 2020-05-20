@@ -6,6 +6,7 @@
     
         <!-- User Styles & Scripts -->
         <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="Sass/styles.css">
         <script src="Scripts/scripts.js"></script>
     
         <!-- Bootstrap Styles, Scripts & Meta Tags -->
@@ -15,19 +16,18 @@
     </head>
     <body>
         <!-- Watch Now overlay -->
-        <div id="watchNow" class="watchNow--overlay text-center">
+        <div id="watchNow" class="wn__overlay text-center">
             <div class="container">
                 <!-- Button to close the overlay navigation -->
                 <button type="button" class="btn btn-outline-light" onclick="closeWatch()">Close Window</button>
-            
                 <!-- Overlay content -->
-                <div class="globals--containerSpacing">
+                <div class="g__container-spacer">
                     <div class="embed-responsive embed-responsive-16by9 ">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sC8fOO-8uJo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
                     </div> 
                 </div> 
 
-                <div class="globals--containerSpacing text-center globals--txt-thin">
+                <div class="g__container-spacer text-center g__txt-thin">
                     <h5>Want more?</h5>
                     <p>
                         Click <a href="index.html#landingvideos" onclick="closeWatch()">here</a> to watch more videos on this webpage
@@ -77,18 +77,18 @@
         </nav>
 
         <!-- Header-->
-        <div class="container text-center globals--headers">
+        <div class="container text-center g__headers">
             <h1 class="display-3">SERVICES</h1>
         </div>
 
         <div style="height: 5vh; background-color: darkslateblue;"></div>
 
         <!-- Content -->
-        <div class="container globals--txt-thin">
+        <div class="container g__txt-thin">
             <!-- Summary -->
-            <div class="text-center services--contentBlocks">
-                <h2 class="globals--txt-thin">The perfect compliment to your upcoming event.</h2>
-                <p class="globals--textSpacing-lrg">
+            <div class="text-center g__container-spacer">
+                <h2 class="g__txt-thin">The perfect compliment to your upcoming event.</h2>
+                <p class="g__text-spacerlrg">
                     This paragraph will be a description of Phat Sauce's service - I'll have to find a better way to word it. 
                     This paragraph will be a description of Phat Sauce's service - I'll have to find a better way to word it.
                     This paragraph will be a description of Phat Sauce's service - I'll have to find a better way to word it.
@@ -98,7 +98,7 @@
             </div>
 
             <!-- Slider -->
-            <div id="carouselExampleIndicators" class="carousel slide globals--containerSpacing" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide g__container-spacer" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -126,25 +126,27 @@
                 </a>
             </div>
 
-            <div class="text-center services--contentBlocks">
-                <h4 class="globals--txt-thin">Get in touch for a quote, or any further information.</h4>
+            <div class="text-center g__container-spacer">
+                <h4 class="g__txt-thin">Get in touch for a quote, or any further information.</h4>
                 <form action="contact.html">
-                    <button type="submit" class="btn btn-outline-secondary globals--textSpacing">CONTACT</button> 
+                    <button type="submit" class="btn btn-outline-secondary g__text-spacer">CONTACT</button> 
                 </form>
             </div>
-            <hr class="globals--containerSpacing">
-            <div class="text-center services--contentBlocks">
-                <h1 class="globals--txt-bold">Not Sure?</h1>
-                <h4 class="globals--txt-thin globals--textSpacing">Some examples to get you started:</h4>
+
+            <hr class="g__container-spacer">
+
+            <div class="text-center g__container-spacer">
+                <h1 class="g__txt-bold">Not Sure?</h1>
+                <h4 class="g__txt-thin g__text-spacer">Some examples to get you started:</h4>
             </div>
 
             <!-- Tiles -->
-            <div class="services--contentBlocks">
-                <div class="row align-items-center services--tiles">
-                    <div class="col-sm-6 services--tiles-img">
+            <div class="g__container-spacer">
+                <div class="row align-items-center s__tiles">
+                    <div class="col-sm-6 s__tiles-img">
                         <img src="Images/sixPiece.jpg" width="100%">
                     </div>
-                    <div class="col-sm-6 services--tiles-text">
+                    <div class="col-sm-6 s__tiles-text">
                         <h5 class="globals--txt-bold">PARTY BAND</h5>
                         <p>
                             Usually a 4-6 piece band, this will be information about what you will get with the party band.
@@ -154,11 +156,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="row align-items-center services--tiles">
-                    <div class="col-sm-6 services--tiles-img">
+                <div class="row align-items-center s__tiles">
+                    <div class="col-sm-6 s__tiles-img">
                         <img src="Images/fourPiece.jpg" width="100%">
                     </div>
-                    <div class="col-sm-6 services--tiles-text">
+                    <div class="col-sm-6 s__tiles-text">
                         <h5 class="globals--txt-bold">GROOVE BAND</h5>
                         <p>
                             Perfect for background music, this band (usually a trio or quartet) is ideal for your upcoming lowkey function.
@@ -167,11 +169,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="row align-items-center services--tiles">
-                    <div class="col-sm-6 services--tiles-img">
+                <div class="row align-items-center s__tiles">
+                    <div class="col-sm-6 s__tiles-img">
                         <img src="Images/onePiece.jpg" width="100%">
                     </div>
-                    <div class="col-sm-6 services--tiles-text">
+                    <div class="col-sm-6 s__tiles-text">
                         <h5 class="globals--txt-bold">DUO or SOLO ACT</h5>
                         <p>
                             I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
@@ -183,13 +185,9 @@
             </div>
         <!-- </div> -->
 
-        <hr class="globals--containerSpacing">
-        <!-- <div class="globals--containerSpacing" style="height: 5vh; background-color: darkslateblue;"></div> -->
-
-        <!-- <div class="container globals--txt-thin"> -->
-            <!-- Management Options -->
-            <div class="services--contentBlocks text-center">
-                <h1 class="globals--txt-thin">UNDER THE SAME MANAGEMENT</h1>
+        <hr class="g__container-spacer">
+            <div class="g__container-spacer text-center">
+                <h1 class="g__txt-thin">UNDER THE SAME MANAGEMENT</h1>
                 <!-- <div class="services--circleLogo">
                     <img src="Images/circleLogo.png">
                     <img src="Images/circleLogo.png">
@@ -197,8 +195,7 @@
                 </div> -->
             </div>
 
-
-            <div class="services--contentBlocks">
+            <div class="g__container-spacer">
                 <div class="row align-items-center">
                     <div class="col-sm-4"><img src="Images/suLogo.jpg" width="100%"></div>               
                     <div class="col-sm-8">
@@ -223,7 +220,7 @@
                 </div> 
             </div>
 
-            <div class="services--contentBlocks text-center">
+            <div class="g__container-spacer text-center">
                 <p>
                     If you are interested in any of our available services, please contact us with the details found via the button below.
                 </p>
@@ -234,7 +231,7 @@
         </div>
 
         <!-- Footer -->
-        <div class="globals--containerSpacing">
+        <div class="g__container-spacer">
             <svg width='100%' height='5vh' viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon points="0,2 0,100 100,100 100,0 25,75 " fill="black"/>
                 <polygon points="0,20 0,100 100,100 100,20 25,95 " fill="#89528c"/>
@@ -242,28 +239,29 @@
         </div>
 
         <footer>
-            <div class="container globals--txt-thin">
-                <div class="row">
-                  <div class="col-sm footer--panel">
-                    <h6 class="globals--txt-thin">Connect</h6>
+            <div class="container g__txt-thin">
+                <div class="row align-items-center">
+                  <div class="col-sm-6 footer__panel">
+                    <h6 class="g__txt-thin">Connect</h6>
                     <p>Find us at your favourite social platform below.</p>
-                    <div class="footer-logos">
+                    <div class="footer__logos">
                         <a href="https://www.instagram.com/phatsauceband/"><img src="Images/iglogo.webp" width="30px" height="30px" alt="Instagram"></a>
                         <a href="https://www.facebook.com/phatsauce"><img src="Images/fblogo.webp" width="30px" height="30px" alt="Facebook"></a>
                         <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ"><img src="Images/ytlogo.webp" width="30px" height="30px" alt="YouTube"></a>
                     </div>
                   </div>
-                  <div class="col-sm footer--panel">
-                    <h6 class="globals--txt-thin">Enquiries</h6>
-                    <p>Email: <a href="mailto:phatsauceband@gmail.com" class="globals--links">phatsauceband@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+61-426-119-544" class="globals--links">(+61) 426 119 544</a></p>
+                  <div class="col-sm-6 footer__panel">
+                    <h6 class="g__txt-thin">Enquiries</h6>
+                    <p>Email: <a href="mailto:phatsauceband@gmail.com" class="g__links-dark">phatsauceband@gmail.com</a>
+                        <br>
+                    Phone: <a href="tel:+61-426-119-544" class="g__links-dark">(+61) 426 119 544</a></p>
                   </div>
                 </div>
             </div>
 
-            <div class="footer--devCol-container">
-                <div class="container footer--devCol globals--txt-thin">
-                    Developed by <a href="https://matttopping.com" class="globals--links">Matt Topping</a>
+            <div class="footer__dev-container">
+                <div class="container  text-center footer__dev g__txt-thin">
+                    Developed by <a href="https://matttopping.com" class="g__links-dark">Matt Topping</a>
                 </div>
             </div>
         </footer>

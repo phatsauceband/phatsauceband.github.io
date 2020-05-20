@@ -6,6 +6,7 @@
     
         <!-- User Styles & Scripts -->
         <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="Sass/styles.css">
         <script src="Scripts/scripts.js"></script>
     
         <!-- Bootstrap Styles, Scripts & Meta Tags -->
@@ -13,22 +14,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
+
     <body>
         <!-- Watch Now overlay -->
-        <div id="watchNow" class="watchNow--overlay text-center">
-            <!-- <a href="javascript:void(0)" onclick="closeWatch()"><div class="watchNow--closer"></div></a> -->
+        <div id="watchNow" class="wn__overlay text-center">
             <div class="container">
                 <!-- Button to close the overlay navigation -->
                 <button type="button" class="btn btn-outline-light" onclick="closeWatch()">Close Window</button>
-            
                 <!-- Overlay content -->
-                <div class="globals--containerSpacing">
+                <div class="g__container-spacer">
                     <div class="embed-responsive embed-responsive-16by9 ">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sC8fOO-8uJo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
                     </div> 
                 </div> 
 
-                <div class="globals--containerSpacing text-center globals--txt-thin">
+                <div class="g__container-spacer text-center g__txt-thin">
                     <h5>Want more?</h5>
                     <p>
                         Click <a href="index.html#landingvideos" onclick="closeWatch()">here</a> to watch more videos on this webpage
@@ -38,7 +38,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
@@ -79,81 +78,75 @@
         </nav>
 
         <!-- Discount Banner -->
-        <div class="alert alert-primary alert-dismissible fade show banner--covid" role="alert">
-            <strong>Post Pandemic Discount!</strong> <a href="contact.html" class="globals--links globals--links-underlined">Contact us</a> for discount event prices.
+        <div class="alert alert-primary alert-dismissible fade show g__banner" role="alert">
+            <strong>Post Pandemic Discount!</strong> <a href="contact.html" class="g__links-light">Contact us</a> for discount event prices.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
 
         <!-- Landing Image -->
-        <div class="landing--container">
-            <div class="landing--logoContainer">
+        <div class="i__landing-img">
+            <div class="i__landing-logo">
                 <img src="Images/phatBlk.png">
                 <img src="Images/sauceBlk.png">
             </div>
         </div>
-        <!-- <img src="Images/Desk.jpg" style="width: 100%;"> -->
 
         <!-- Landing Content -->
-        <div class="container landing--blurb">
-            <div class="landing--blurb-summary">
-                        
-                <h1 class="globals--txt-bold">Bespoke musical entertainment, perfect for any party, function or wedding.</h1>
-
-                <div class="jumbotron jumbotron-fluid globals--containerSpacing">
+        <div class="container text-center">
+            <div class="i__blurb-summary">         
+                <h1 class="g__txt-bold">Bespoke musical entertainment, perfect for any party, function or wedding.</h1>
+                <div class="jumbotron jumbotron-fluid g__container-spacer">
                     <div class="container text-center">
-                        <h3 class="globals--txt-thin">Interested in hearing us play?</h3>
-                        <button type="button" onclick="openWatch()" class="btn btn-outline-info landing--btn-spacing">Watch Now!</button>
+                        <h3 class="g__txt-thin">Interested in hearing us play?</h3>
+                        <button type="button" onclick="openWatch()" class="btn btn-outline-info i__blurb-btn">Watch Now!</button>
                     </div>
                 </div>  
-
-                <!-- <h6>Interested in hearing us play?</h6>
-                <button type="button" onclick="openWatch()" class="btn btn-outline-danger">Watch Now!</button> -->
             </div>
 
-            <div class="row globals--txt-thin">
-                <div class="col-sm-4 landing--card">
-                  <div class="card landing--card-content">
+            <div class="row g__txt-thin">
+                <div class="col-sm-4 i__card">
+                  <div class="card i__card-content">
                     <div class="card-body">
                       <p class="card-text ">"They go above and beyond to make the event a success, with the guests on
-                           the dance floor all night and everyone singing along..." <a href="testimonials.html" class="globals--links">read more.</a></p>
-                      <p class="landing--card-author">Troy, Events Officer, Griffith University </p>
+                           the dance floor all night and everyone singing along..." <a href="testimonials.html" class="g__links-light">read more.</a></p>
+                      <p class="g__author">Troy, Events Officer, Griffith University </p>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 landing--card">
-                  <div class="card landing--card-content">
+                <div class="col-sm-4 i__card">
+                  <div class="card i__card-content">
                     <div class="card-body">
                       <p class="card-text">"Phat Sauce played a Jazz Set, Dance Set and a Pop Set at our wedding
-                           reception in City Hall. We can’t recommend this band more highly..." <a href="testimonials.html" class="globals--links">read more.</a></p>
-                      <p class="landing--card-author">Richard & Varna, Wedding</p>
+                           reception in City Hall. We can’t recommend this band more highly..." <a href="testimonials.html" class="g__links-light">read more.</a></p>
+                      <p class="g__author">Richard & Varna, Wedding</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 landing--card">
-                    <div class="card landing--card-content">
+                <div class="col-sm-4 i__card">
+                    <div class="card i__card-content">
                       <div class="card-body">
                         <p class="card-text">"I engaged Phat Sauce for my private function. A pleasure to deal
-                             with, the music gave great enjoyment to ourselves and our guests..." <a href="testimonials.html" class="globals--links">read more.</a></p>
-                        <p class="landing--card-author">Michael Kenny, Ascot</p>
+                             with, the music gave great enjoyment to ourselves and our guests..." <a href="testimonials.html" class="g__links-light">read more.</a></p>
+                        <p class="g__author">Michael Kenny, Ascot</p>
                       </div>
                     </div>
                   </div>
             </div>
 
             <div class="row" id="landingvideos">
-                <div class="col-sm-6 embed-responsive embed-responsive-16by9 landing--videos">
+                <div class="col-sm-6 embed-responsive embed-responsive-16by9 i__videos">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sC8fOO-8uJo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
                 </div>
-                <div class="col-sm-6 embed-responsive embed-responsive-16by9 landing--videos">
+                <div class="col-sm-6 embed-responsive embed-responsive-16by9 i__videos">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-hR7JGl7HpM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
         
         <!-- Footer -->
-        <div class="globals--containerSpacing">
+        <div class="g__container-spacer">
             <svg width='100%' height='5vh' viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon points="0,2 0,100 100,100 100,0 25,75 " fill="black"/>
                 <polygon points="0,20 0,100 100,100 100,20 25,95 " fill="#89528c"/>
@@ -161,28 +154,29 @@
         </div>
 
         <footer>
-            <div class="container globals--txt-thin">
-                <div class="row">
-                  <div class="col-sm footer--panel">
-                    <h6 class="globals--txt-thin">Connect</h6>
+            <div class="container g__txt-thin">
+                <div class="row align-items-center">
+                  <div class="col-sm-6 footer__panel">
+                    <h6 class="g__txt-thin">Connect</h6>
                     <p>Find us at your favourite social platform below.</p>
-                    <div class="footer-logos">
+                    <div class="footer__logos">
                         <a href="https://www.instagram.com/phatsauceband/"><img src="Images/iglogo.webp" width="30px" height="30px" alt="Instagram"></a>
                         <a href="https://www.facebook.com/phatsauce"><img src="Images/fblogo.webp" width="30px" height="30px" alt="Facebook"></a>
                         <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ"><img src="Images/ytlogo.webp" width="30px" height="30px" alt="YouTube"></a>
                     </div>
                   </div>
-                  <div class="col-sm footer--panel">
-                    <h6 class="globals--txt-thin">Enquiries</h6>
-                    <p>Email: <a href="mailto:phatsauceband@gmail.com" class="globals--links">phatsauceband@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+61-426-119-544" class="globals--links">(+61) 426 119 544</a></p>
+                  <div class="col-sm-6 footer__panel">
+                    <h6 class="g__txt-thin">Enquiries</h6>
+                    <p>Email: <a href="mailto:phatsauceband@gmail.com" class="g__links-dark">phatsauceband@gmail.com</a>
+                        <br>
+                    Phone: <a href="tel:+61-426-119-544" class="g__links-dark">(+61) 426 119 544</a></p>
                   </div>
                 </div>
             </div>
 
-            <div class="footer--devCol-container">
-                <div class="container footer--devCol globals--txt-thin">
-                    Developed by <a href="https://matttopping.com" class="globals--links">Matt Topping</a>
+            <div class="footer__dev-container">
+                <div class="container  text-center footer__dev g__txt-thin">
+                    Developed by <a href="https://matttopping.com" class="g__links-dark">Matt Topping</a>
                 </div>
             </div>
         </footer>

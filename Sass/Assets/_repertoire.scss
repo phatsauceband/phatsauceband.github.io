@@ -1,0 +1,30 @@
+@import "variables";
+
+.r__row-container{
+    margin-top: 3rem;
+}
+
+.r__songlist{
+    font-size: .75rem;
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.r__songline{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    div{
+        margin: 0rem .25rem;
+    }
+
+}
+
+.r__download-container{
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
