@@ -5,7 +5,7 @@
 }
 
 .r__songlist{
-    font-size: .75rem;
+    font-size: 1rem;
     p{
         margin: 0;
         padding: 0;
@@ -19,12 +19,18 @@
     div{
         margin: 0rem .25rem;
     }
-
 }
 
 .r__download-container{
     p{
         margin: 0;
         padding: 0;
+    }
+}
+
+//576px
+@media (max-width: 576px) { //Adding spacing between nav items
+    .r__songlist-collapsed{
+        margin-top: 3rem;
     }
 }

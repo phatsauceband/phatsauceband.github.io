@@ -54,16 +54,16 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                     <ul class="navbar-nav ml-auto flex-nowrap">
                         <li class="nav-item">
-                            <button type="button" onclick="openWatch()" class="btn btn-outline-danger">WATCH NOW!</button>
+                            <button type="button" onclick="openWatch()" class="btn g__btn-primaryoutline nav__watch-btn">WATCH NOW!</button>
                         </li>
                         <li class="nav-item">
-                            <a href="services.html" class="nav-link m-2 menu-item">SERVICES</a>
+                            <a href="services.html" class="nav-link m-2 menu-item ">SERVICES</a>
                         </li>
                         <li class="nav-item">
                             <a href="repertoire.html" class="nav-link m-2 menu-item">REPERTOIRE</a>
                         </li>
                         <li class="nav-item">
-                            <a href="testimonials.html" class="nav-link m-2 menu-item">TESTIMONIALS</a>
+                            <a href="testimonials.html" class="nav-link m-2 menu-item active nav__active">TESTIMONIALS<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="epk.html" class="nav-link m-2 menu-item">EPK</a>
@@ -81,18 +81,23 @@
             <h1 class="display-3">TESTIMONIALS</h1>
         </div>
 
-        <div style="height: 5vh; background-color: darkslateblue;"></div>
+        <div class="g__container-spacer">
+            <svg width='100%' height='5vh' viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="0,2 0,25 25,100 100,25 100,0 25,75 " fill="black"/>
+            </svg>
+        </div>
 
         <div class="container g__container-spacer text-center g__txt-thin">
             <div class="g__container-spacer text-center">
                 <p class="lead">
-                    Here lies a paragraph that has the purpose to describe what is on this page. 
-                    What is outline is mainly that you are a mug! Should you wish to contest this statement please navigate to our contact page.
+                    Phat Sauce has had the privilege of working at many fantastic events with wonderful
+                     clients over the past few years.  Here’s just some of lovely feedback that has been
+                      sent through to management.
                 </p>
             </div>
 
             <div class="g__container-spacer">
-                <div class="row align-items-center t__cards">
+                <div class="row align-items-center t__cards g__bg-primary">
                     <div class="col-sm-6"><img src="Images/squarePlaceholder.png"></div>
                     <div class="col-sm-6">
                         <p>
@@ -108,7 +113,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row align-items-center t__cards">
+                <div class="row align-items-center t__cards g__bg-primary">
                     <div class="col-sm-6">
                         <p>
                             "We have booked Phat Sauce the last couple of years to perform at a number of Griffith University events,
@@ -129,7 +134,7 @@
                     </div>
                     <div class="col-sm-6"><img src="Images/squarePlaceholder.png"></div>
                 </div>
-                <div class="row align-items-center t__cards">
+                <div class="row align-items-center t__cards g__bg-primary">
                     <div class="col-sm-6"><img src="Images/squarePlaceholder.png"></div>
                     <div class="col-sm-6">
                         <p>
@@ -143,7 +148,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row align-items-center t__cards">
+                <div class="row align-items-center t__cards g__bg-primary">
                     <div class="col-sm-6">
                         <p>
                             Thanks again for being a bunch of sweethearts, playing good music and being super flexible and understanding
@@ -160,9 +165,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div style="height: 5vh; background-color: darkslateblue;"></div> -->
-
 
         <div class="container text-center ">
             <hr class="g__container-spacer">
@@ -188,14 +190,14 @@
         </div>
       
         <!-- Footer -->
-        <div class="g__container-spacer">
+        <!-- <div class="g__container-spacer">
             <svg width='100%' height='5vh' viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon points="0,2 0,100 100,100 100,0 25,75 " fill="black"/>
                 <polygon points="0,20 0,100 100,100 100,20 25,95 " fill="#89528c"/>
             </svg>
-        </div>
+        </div> -->
 
-        <footer>
+        <footer class="g__container-spacer">
             <div class="container g__txt-thin">
                 <div class="row align-items-center">
                   <div class="col-sm-6 footer__panel">

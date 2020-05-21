@@ -1,1 +1,34 @@
 @import "variables";
+
+.e__package{
+    .lead{
+        padding-top: 1rem;
+    }
+}
+
+.e__blurb-header{
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 768px){
+    .e__blurb-header{
+        font-size: 2rem;
+    }
+}
+
+.col-sm-6{//centering buttons in list
+    button{
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .e__package{
+        .display-4{
+            font-size: 2.5rem;
+        }
+    }
+}
+

@@ -1,29 +1,58 @@
 // COLOURS
-$primary: #89528c;
+$primary: rgb(135, 80, 140);
 $secondary: black;
 
-$link__light: purple;
-$link__light-hover: blue;
+$link__light: rgb(170, 75, 170);
+$link__light-hover: rgb(200, 135, 215);
 
 $link__dark: lightgrey;
 $link__dark-hover: grey;
 
-$btn-filled: black;
+$btn: black;
 
 $author: grey;
 
 // Mixins
-@mixin links{
+@mixin links($colour, $colour-hover){
     text-decoration: none;
     transition: 0.2s;
+    color: $colour;
+    border-radius: 2px;
     &:hover{
         text-decoration: none;
-        transform:translateY(2px);
+        color: $colour-hover;
     }
     // &:active{}
     &:focus{
         text-decoration: none;
-        box-shadow: 0 0 0 0.2rem rgba(150, 40, 150, 0.5);
+        // box-shadow: 0 0 0 2px rgba($colour, .25);
     }
     // &:visited{}
 }
+
+@mixin btn-outline($colour){
+    color: $colour !important;
+    border-color: $colour !important;
+  
+    &:hover{
+      color: white !important;
+      background-color: $colour;
+      border-color: $colour;
+      transition: 0.2s;
+    }
+  
+    &:focus,
+    &.focus {
+      box-shadow: 0 0 0 5px rgba($colour, .25) !important;
+    }
+  
+    &.disabled,
+    &:disabled {
+      color: $colour;
+      background-color: transparent;
+    }
+  
+    &:focus {
+        box-shadow:  0 0 0 5px rgba($colour, .5);
+    }
+  }

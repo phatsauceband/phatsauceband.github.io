@@ -1,17 +1,42 @@
 @import "variables";
 
-.i__landing-img{
-    height: calc(100vh - 100px - 0.5rem); /* Change based on pixel height of logo in nav */
-    width: 100%;
-    overflow: hidden;
-    background-image: url(../Images/Desk.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    & img{ //Phat Sauce Logo Scaling
-        margin: 0rem 1rem;
-        height: 170px;
-        width: 400px;
+.i__landing-arrow{
+    margin-top: 65vh;
+    display: none;
+    background-color: white;
+    p{
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 4rem;
+    }
+    h6{
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+.i__landing-img{// Scale based on width on all devices
+    img{
+        width: 100%;
+    }
+}
+
+@media(min-width: 992px){ // On larger devices, fullscreen landing
+    .i__landing-img{
+        height: calc(100vh - 100px - 0.5rem); /* Change based on pixel height of logo in nav */
+        width: 100%;
+        overflow: hidden;
+        background-image: url(../Images/landing-sml.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        img{
+            display: none;
+        }
+        // .i__landing-arrow{
+        //     display: block;
+        // }
     }
 }
 
@@ -23,6 +48,20 @@
 .i__blurb-summary{
     padding-top: 4rem;
     padding-bottom: 2rem;
+    h1{
+        font-size: 1.5rem;
+    }
+    .jumbotron{
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width: 992px){
+    .i__blurb-summary{
+        h1{
+            font-size: 2rem;
+        }
+    }
 }
 
 .i__blurb-btn{
@@ -40,9 +79,12 @@
 
 .i__card-content{ //Center content within landing cards
     height: 100%;
-    padding-bottom: 1rem; /* mirror padding on p tags in landing--card p */
     display: grid !important; /* Override bootstrap*/
+    border-color: $primary !important;
     align-content: center;
+    .g__author{
+        margin: 0;
+    }
 }
 
 .i__videos{

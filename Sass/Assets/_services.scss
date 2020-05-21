@@ -2,7 +2,6 @@
 
 .s__tiles{
     margin: 1rem 0rem;
-    background-color: #e9ecef;
 }
 
 .s__tiles-img{
@@ -11,4 +10,11 @@
 
 .s__tiles-text{
     padding: 1rem;
+    p{
+        font-size: 1.25rem;
+    }
+}
+
+.s__management-blurb{
+    padding: 2rem 0;
 }

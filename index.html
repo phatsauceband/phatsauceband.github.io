@@ -55,7 +55,7 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                     <ul class="navbar-nav ml-auto flex-nowrap">
                         <li class="nav-item">
-                            <button type="button" onclick="openWatch()" class="btn btn-outline-danger">WATCH NOW!</button>
+                            <button type="button" onclick="openWatch()" class="btn g__btn-primaryoutline nav__watch-btn">WATCH NOW!</button>
                         </li>
                         <li class="nav-item">
                             <a href="services.html" class="nav-link m-2 menu-item">SERVICES</a>
@@ -79,7 +79,7 @@
 
         <!-- Discount Banner -->
         <div class="alert alert-primary alert-dismissible fade show g__banner" role="alert">
-            <strong>Post Pandemic Discount!</strong> <a href="contact.html" class="g__links-light">Contact us</a> for discount event prices.
+            <strong>Post Pandemic Discount!</strong> <a href="contact.html" class="g__links-dark">Contact us</a> for discount event prices.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -87,9 +87,10 @@
 
         <!-- Landing Image -->
         <div class="i__landing-img">
-            <div class="i__landing-logo">
-                <img src="Images/phatBlk.png">
-                <img src="Images/sauceBlk.png">
+            <img src="Images/landing-sml.png">
+            <div class="i__landing-arrow text-center">
+                <h6 class="g__txt-bold">Enter Website</h6>
+                <p>&#9660</p>
             </div>
         </div>
 
@@ -97,10 +98,10 @@
         <div class="container text-center">
             <div class="i__blurb-summary">         
                 <h1 class="g__txt-bold">Bespoke musical entertainment, perfect for any party, function or wedding.</h1>
-                <div class="jumbotron jumbotron-fluid g__container-spacer">
+                <div class="jumbotron jumbotron-fluid g__bg-primary g__container-spacer">
                     <div class="container text-center">
                         <h3 class="g__txt-thin">Interested in hearing us play?</h3>
-                        <button type="button" onclick="openWatch()" class="btn btn-outline-info i__blurb-btn">Watch Now!</button>
+                        <button type="button" onclick="openWatch()" class="btn g__btn-outline i__blurb-btn">Watch Now!</button>
                     </div>
                 </div>  
             </div>
@@ -146,14 +147,14 @@
         </div>
         
         <!-- Footer -->
-        <div class="g__container-spacer">
+        <!-- <div class="g__container-spacer">
             <svg width='100%' height='5vh' viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon points="0,2 0,100 100,100 100,0 25,75 " fill="black"/>
                 <polygon points="0,20 0,100 100,100 100,20 25,95 " fill="#89528c"/>
             </svg>
-        </div>
+        </div> -->
 
-        <footer>
+        <footer class="g__container-spacer">
             <div class="container g__txt-thin">
                 <div class="row align-items-center">
                   <div class="col-sm-6 footer__panel">
