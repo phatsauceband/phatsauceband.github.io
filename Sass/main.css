@@ -1,0 +1,7 @@
+.nav-item .watchnow-btn:hover {
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+/*# sourceMappingURL=main.css.map */

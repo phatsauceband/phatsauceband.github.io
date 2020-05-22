@@ -1,29 +1,33 @@
 // COLOURS
-$primary: rgb(135, 80, 140);
-$secondary: black;
+$primary: #5F3782;
+$primary-dark: #472466;
+$secondary: #161616;
+$light: #fefefe;
 
 $link__light: rgb(170, 75, 170);
 $link__light-hover: rgb(200, 135, 215);
 
-$link__dark: lightgrey;
-$link__dark-hover: grey;
+$link__dark: #d8d8d8;
+$link__dark-hover: #fff;
 
 $btn: black;
 
 $author: grey;
 
 // Mixins
-@mixin links($colour, $colour-hover){
+@mixin links($colour, $colour-hover) {
     text-decoration: none;
     transition: 0.2s;
     color: $colour;
     border-radius: 2px;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
         color: $colour-hover;
     }
+
     // &:active{}
-    &:focus{
+    &:focus {
         text-decoration: none;
         // box-shadow: 0 0 0 2px rgba($colour, .25);
     }
