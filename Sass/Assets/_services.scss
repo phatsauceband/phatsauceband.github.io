@@ -1,20 +1,15 @@
 @import "variables";
 
-.s__tiles{
-    margin: 1rem 0rem;
-}
-
-.s__tiles-img{
-    padding: 1rem;
-}
-
-.s__tiles-text{
-    padding: 1rem;
-    p{
-        font-size: 1.25rem;
+.s{
+    &__tiles{
+        margin: 1rem 0rem;
+        &-img{ padding: 1rem; }
+        &-text{
+            padding: 1rem;
+            p{ font-size: 1.25rem; }
+        }
     }
-}
-
-.s__management-blurb{
-    padding: 2rem 0;
+    &__management{
+        &-blurb{ padding: 2rem 0; }
+    }
 }

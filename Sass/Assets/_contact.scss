@@ -1,30 +1,29 @@
 @import "variables";
 
-.c__management-container{
-    img{
-        width: 100%;
+.c{
+    &__management{
+        &-container{
+            img{ width: 100%; }
+        }
+        &-blurb{
+            margin-top: 3rem;
+            font-size: 1.5rem;
+        }
     }
-}
-
-.c__management-blurb{
-    margin-top: 3rem;
-    font-size: 1.5rem;
-}
-
-.c__brands-container{
-    margin-top: 3rem;
-    img{
-        padding: 1rem;
+    &__brands{
+        &-container{
+            margin-top: 3rem;
+            img{ padding: 1rem; }
+        }
     }
-}
-
-.c__testimonials{      
-    h4{
-        padding:  2rem 0;
-        margin: 0;
-    }
-    p{
-        margin: 0;
-        padding: 0 0 2rem 0;
+    &__testimonials{
+        h4{
+            padding:  2rem 0;
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0 0 2rem 0;
+        }
     }
 }

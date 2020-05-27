@@ -1,20 +1,28 @@
 @import "variables";
 
-.t__cards{
-    margin: 1rem 0;
-    img{
-        width:100%;
+.t{
+    &__cards{
+        margin: 1rem 0;
+        img{
+            width:100%;
+        }
+        .col-sm-6{
+            padding:0 !important; /* Bootstrap override to make images line up when the text is not taller than the image */
+        }
+        p{
+            padding: 1.5rem;
+        }
     }
-    .col-sm-6{
-        padding:0 !important; /* Bootstrap override to make images line up when the text is not taller than the image */
-    }
-    p{
-        padding: 1.5rem;
+    &__pv{
+        &-container{
+            img{ width: 100%; }
+        }
     }
 }
 
-.t__pv-container{
-    img{
-        width: 100%;
-    }
+// overriding bootstrap to display all picture in col-sm-2 in 3's rather than 1's on mobile
+.col-sm-2 {
+    -ms-flex: 0 0 33.3333334%;
+    flex: 0 0 33.3333334%;
+    max-width: 33.3333334%;
 }

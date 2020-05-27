@@ -1,25 +1,56 @@
 @import "variables";
 
-.i__landing-arrow{
-    margin-top: 65vh;
-    display: none;
-    background-color: white;
-    p{
-        color: white;
-        margin: 0;
-        padding: 0;
-        font-size: 4rem;
+.i{
+    &__landing{
+        &-arrow{
+            margin-top: 65vh;
+            display: none;
+            background-color: white;
+            p{
+                color: white;
+                margin: 0;
+                padding: 0;
+                font-size: 4rem;
+            }
+            h6{
+                color: white;
+                font-size: 2rem;
+            }
+        }
+        &-img{
+            img{ width: 100%; }
+        }
+        &-logo{
+            margin-top: 7rem;
+            text-align: center;
+        }
     }
-    h6{
-        color: white;
-        font-size: 2rem;
+    &__blurb{
+        &-summary{
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+            h1{
+                font-size: 1.5rem;
+            }
+            .jumbotron{
+                margin-bottom: 0;
+            }
+        }
+        &-btn{ margin-top: 1rem; }
     }
-}
-
-.i__landing-img{// Scale based on width on all devices
-    img{
-        width: 100%;
+    &__card{
+        margin-top: 2rem;
+        &-content{
+            height: 100%;
+            display: grid !important; /* Override bootstrap*/
+            border-color: $primary !important;
+            align-content: center;
+            .g__author{
+                margin: 0;
+            }
+        }
     }
+    &__videos{ margin: 4rem 0rem 0rem 0rem; }
 }
 
 @media(min-width: 992px){ // On larger devices, fullscreen landing
@@ -34,25 +65,6 @@
         img{
             display: none;
         }
-        // .i__landing-arrow{
-        //     display: block;
-        // }
-    }
-}
-
-.i__landing-logo{
-    margin-top: 7rem;
-    text-align: center;
-}
-
-.i__blurb-summary{
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    h1{
-        font-size: 1.5rem;
-    }
-    .jumbotron{
-        margin-bottom: 0;
     }
 }
 
@@ -62,31 +74,4 @@
             font-size: 2rem;
         }
     }
-}
-
-.i__blurb-btn{
-    margin-top: 1rem;
-}
-
-.i__card{ //Adjusting the height between each landing card
-    margin-top: 2rem;
-    &p{
-        margin: 0;
-        padding: 0;
-        margin-top: 1rem;
-    }
-}
-
-.i__card-content{ //Center content within landing cards
-    height: 100%;
-    display: grid !important; /* Override bootstrap*/
-    border-color: $primary !important;
-    align-content: center;
-    .g__author{
-        margin: 0;
-    }
-}
-
-.i__videos{
-    margin: 4rem 0rem 0rem 0rem;
 }

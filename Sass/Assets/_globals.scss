@@ -4,132 +4,177 @@
 // HTML Globals
 ////////////////////
 
-nav{
+// body { 
+//     background: #f7f7f7 !important; 
+//     font-family: 'Courgette';
+// }
+
+nav {
     box-shadow: 0px 0px 5px #888888; // Add drop shadow to bottom of the navbar
+    border-top: 3px solid $primary;    
 }
 
-.nav__watch-btn{
-    margin-right: 0.75rem;
+.nav {
+    &-item a.nav-link { 
+        transition: all .2s !important; 
+
+        &:hover {
+            color: $primary !important;
+        }
+    }
+
+    &__watch-btn { margin-right: 0.75rem; }
+    &__active { 
+        font-weight: 500;
+        color: black !important; 
+    }
 }
 
-.nav__active{
-    font-weight: 500;
-}
+hr { border-top: 1px solid rgba($primary, .9) !important; } // Darker line for hr 
 
-hr{
-    border-top: 1px solid rgba($primary, .9) !important; // Darker line for hr
-    // box-shadow:  2px 2px 20px rgba($primary, 1) !important;
-}
-
-/////////////////////////
-// Watch Now Styles
-/////////////////////////
-
-.wn__overlay{
-    height: 100vh;
-    width: 100%;    
-    z-index: 5000;
-    position: fixed;
-    display: none;
-    align-content: center;
-    color: white;
-    background-color: rgb(0,0,0); // Black fallback color
-    background-color: rgba(0,0,0, 0.9); // Black w/opacity 
-    overflow: hidden;
-    overflow-x: hidden; // Disable horizontal scroll 
+.svg{
+    &__blk{
+        fill: black;
+        &-test{
+            fill: transparent;
+            stroke: black;
+            stroke-width: 4px;
+            stroke-linecap: round;
+        }
+    }
+    &__highlight{
+        fill: $primary;
+    }
 }
 
 /* Bootstrap override to center videos with side spacing */
-.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video{
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
     width: 92% !important;
     left: 4% !important;
 }
+
 
 ///////////////////////
 // Footer Styles
 ///////////////////////
 
-footer{
+footer {
     background-color: $primary;
     color: white;
     font-size: 0.875rem;
-    border-top: solid black 12px;
-    p{
-        display: inline-block;
-        margin: 0rem 0.75rem 0.5rem 0.75rem;
+    // p{
+    //     display: inline-block;
+    //     margin: 0rem 0.75rem 0.5rem 0.75rem;
+    // }
+}
+
+.footer {
+    &__panel{
+        padding-top: 2rem;
+        &-logo {
+            // position: relative;            
+            & img {
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                height: 6rem;
+                width: 6rem;
+                opacity: .8;
+                transition: all .2s;S
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }   
+    }
+         
+    &__logos {        
+        & a {
+            display: inline-block;
+            position: relative;
+            margin: 0rem 0.75rem 0.5rem 0.75rem;
+            color: $primary;
+            padding: .25rem;
+            background: $light;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            transition: all .2s;
+
+            & i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover {
+                font-size: 1rem;
+                color: $primary;
+                font-weight: bold;
+                background: rgba($light, .8);
+            }
+            &:first-child { margin-left: 0; }
+        }
+    }
+
+    &__dev {
+        padding: .5rem 0rem;
+        font-size: .6rem;
+        margin-top: 2rem;
+
+        &-container { background-color: $secondary; }
     }
 }
 
-.footer__panel{
-    padding-top: 2rem;
-    text-align: center;
-}
 
-.footer__logos{
-    img{
-        display: inline-block;
-        margin: 0rem 0.75rem 0.5rem 0.75rem;
-    }
-}
-
-.footer__dev{
-    padding: .75rem 0rem;
-}
-
-.footer__dev-container{
-    margin-top: 2rem;
-    background-color: $secondary;
-}
 
 ///////////////////////
 // Global Styles
 ///////////////////////
 
-.g__container-spacer{
-    margin-top: 4rem; // Top spacing for container
-}
+.g {
+    &__banner { // Covid Alert Banner - Overriding Bootstrap
+        position: fixed !important;
+        z-index: 1000;
+        width: 100% !important;
+        color: white !important;
+        border-radius: 0 !important;
+        background-color: rgba($primary, 0.9) !important;
+        border-color: rgba($primary, 0.9) !important;
+        &i{
+            font-size: 0.75rem;
+        }
+    } 
 
-.g__text-spacer{
-    margin-top: 0.5rem;
-}
+    &__headers {
+        margin: 3rem 0rem;
+        overflow: hidden;
+    }
 
-.g__text-spacermed{
-    margin-top: 1rem;
-}
+    &__font {
+        &-stylised{
+            font-family: 'Courgette', sans-serif;
+        }
+        &-stylisedlrg{
+            font-family: 'Courgette', sans-serif;
+            font-size: 1.3rem;
+        }
+    }
 
-.g__text-spacerlrg{
-    margin-top: 1.5rem;
-}
-
-.g__txt-thin{ 
-    font-weight: 300;
-}
-
-.g__txt-bold{
-    font-weight: 400;
-}
-
-.g__banner{ // Covid Alert Banner - Overriding Bootstrap
-    position: fixed !important;
-    z-index: 1000;
-    width: calc(100% - 2rem);
-    margin: .5rem 1rem;
-    color: white !important;
-    background-color: $primary !important;
-    border-color: $primary !important;
-} 
-
-.g__links-light{
-    @include links($link__light, $link__light-hover);
-}
-
-.g__links-dark{
-    @include links($link__dark, $link__dark-hover);
-}
-
-.g__headers{
-    margin: 3rem 0rem;
-    overflow: hidden;
+    &__author { color: $author; }
+    &__btn-outline { @include btn-outline($btn); }
+    &__bg-primary { background-color: rgba($primary, .125) !important; }
+    &__btn-primaryoutline { @include btn-outline($primary); }
+    &__container-spacer { margin-top: 4rem; } // Top spacing for container
+    &__links-dark { @include links($link__dark, $link__dark-hover); }
+    &__links-light { @include links($link__light, $link__light-hover); }
+    &__text-spacer { margin-top: 0.5rem; }
+    &__text-spacermed { margin-top: 1rem; }
+    &__text-spacerlrg { margin-top: 1.5rem; }
+    &__txt-thin { font-weight: 300; }
+    &__txt-bold { font-weight: 400; }    
 }
 
 @media (max-width: 576px){
@@ -138,22 +183,6 @@ footer{
             font-size: 2.5rem;
         }
     }
-}
-
-.g__author{
-    color: $author;
-}
-
-.g__btn-outline{
-    @include btn-outline($btn);
-}
-
-.g__btn-primaryoutline{
-    @include btn-outline($primary);
-}
-
-.g__bg-primary{
-    background-color: rgba($primary, .125) !important;
 }
 
 /////////////////////////////

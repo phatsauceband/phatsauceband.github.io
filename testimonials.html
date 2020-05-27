@@ -13,31 +13,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <!-- Google Font - Stylised -->
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+        <!-- Fancybox Styles -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     </head>
+
     <body>
-        <!-- Watch Now overlay -->
-        <div id="watchNow" class="wn__overlay text-center">
-            <div class="container">
-                <!-- Button to close the overlay navigation -->
-                <button type="button" class="btn btn-outline-light" onclick="closeWatch()">Close Window</button>
-                <!-- Overlay content -->
-                <div class="g__container-spacer">
-                    <div class="embed-responsive embed-responsive-16by9 ">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sC8fOO-8uJo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
-                    </div> 
-                </div> 
-
-                <div class="g__container-spacer text-center g__txt-thin">
-                    <h5>Want more?</h5>
-                    <p>
-                        Click <a href="index.html#landingvideos" onclick="closeWatch()">here</a> to watch more videos on this webpage
-                        or visit our <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ">Youtube Page</a> to see all Phat Sauce content.
-                    </p>
-                    <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ"><img src="Images/ytlogo.webp" width="30px" height="30px" alt="YouTube"></a>
-                </div>
-            </div>
-        </div>
-
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
             <div class="container">
@@ -51,19 +35,23 @@
                         </button>
                     </div>
                 </div>
+
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                     <ul class="navbar-nav ml-auto flex-nowrap">
                         <li class="nav-item">
-                            <button type="button" onclick="openWatch()" class="btn g__btn-primaryoutline nav__watch-btn">WATCH NOW!</button>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=sC8fOO-8uJo" class="btn g__btn-primaryoutline nav__watch-btn"
+                            data-caption="Find more videos at our <a href='https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ' class='g__links-dark'>YouTube channel</a>.">
+                                WATCH NOW!
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="services.html" class="nav-link m-2 menu-item ">SERVICES</a>
+                            <a href="services.html" class="nav-link m-2 menu-item">SERVICES</a>
                         </li>
                         <li class="nav-item">
                             <a href="repertoire.html" class="nav-link m-2 menu-item">REPERTOIRE</a>
                         </li>
                         <li class="nav-item">
-                            <a href="testimonials.html" class="nav-link m-2 menu-item active nav__active">TESTIMONIALS<span class="sr-only">(current)</span></a>
+                            <a href="testimonials.html" class="nav-link m-2 menu-item nav__active">TESTIMONIALS<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="epk.html" class="nav-link m-2 menu-item">EPK</a>
@@ -172,12 +160,20 @@
                 <h1 class="g__txt-thin">PAST VENUES & ORGANISATIONS</h1>
             </div>
             <div class="row t__pv-container">
-                <div class="col-md-2"><img src="Images/marriott.png"></div>
-                <div class="col-md-2"><img src="Images/griffithLogo.png"></div>
-                <div class="col-md-2"><img src="Images/srcLogo.png"></div>
-                <div class="col-md-2"><img src="Images/uqLogo.png"></div>
-                <div class="col-md-2"><img src="Images/uquLogo.png"></div>
-                <div class="col-md-2"><img src="Images/redroomLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/marriott.png"></div>
+                <div class="col-sm-2"><img src="Images/griffithLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/srcLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/uqLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/uquLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/redroomLogo.png"></div>
+            </div>
+            <div class="row t__pv-container">
+                <div class="col-sm-2"><img src="Images/bnejazzLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/bcecLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/empireLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/woollyLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/doobopLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/seafoodLogo.png"></div>
             </div>
             <div class="row t__pv-container">
                 <div class="col-sm-2"><img src="Images/stamfordLogo.png"></div>
@@ -187,35 +183,43 @@
                 <div class="col-sm-2"><img src="Images/maleconLogo.png"></div>
                 <div class="col-sm-2"><img src="Images/ricsLogo.png"></div>
             </div>
+            <div class="row t__pv-container">
+                <div class="col-sm-2"><img src="Images/amartLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/bneclubLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/bneLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/vicgolfLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/hswLogo.png"></div>
+                <div class="col-sm-2"><img src="Images/citysoundsLogo.png"></div>
+            </div>
         </div>
       
         <!-- Footer -->
-        <!-- <div class="g__container-spacer">
-            <svg width='100%' height='5vh' viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon points="0,2 0,100 100,100 100,0 25,75 " fill="black"/>
-                <polygon points="0,20 0,100 100,100 100,20 25,95 " fill="#89528c"/>
-            </svg>
-        </div> -->
-
         <footer class="g__container-spacer">
             <div class="container g__txt-thin">
                 <div class="row align-items-center">
-                  <div class="col-sm-6 footer__panel">
-                    <h6 class="g__txt-thin">Connect</h6>
-                    <p>Find us at your favourite social platform below.</p>
-                    <div class="footer__logos">
-                        <a href="https://www.instagram.com/phatsauceband/"><img src="Images/iglogo.webp" width="30px" height="30px" alt="Instagram"></a>
-                        <a href="https://www.facebook.com/phatsauce"><img src="Images/fblogo.webp" width="30px" height="30px" alt="Facebook"></a>
-                        <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ"><img src="Images/ytlogo.webp" width="30px" height="30px" alt="YouTube"></a>
+                    <div class="col-sm-4 footer__panel footer__panel-logo">
+                        <a href="index.html">
+                            <img src="Images/transLogoWht.png" alt="Logo">
+                        </a>
                     </div>
-                  </div>
-                  <div class="col-sm-6 footer__panel">
-                    <h6 class="g__txt-thin">Enquiries</h6>
-                    <p>Email: <a href="mailto:phatsauceband@gmail.com" class="g__links-dark">phatsauceband@gmail.com</a>
+
+                    <div class="col-sm-4 footer__panel">
+                        <h6 class="g__txt-thin g__font-stylisedlrg">Connect</h6>
+                        <p>Find us at your favourite social platform below.</p>
+                        <div class="footer__logos">
+                            <a href="https://www.instagram.com/phatsauceband/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/phatsauce"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/channel/UCm6_2841vtW6dUin1id0oHQ"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 footer__panel">
+                        <h6 class="g__txt-thin g__font-stylisedlrg">Enquiries</h6>
+                        <p>Email: <a href="mailto:phatsauceband@gmail.com" class="g__links-dark">phatsauceband@gmail.com</a>
                         <br>
-                    Phone: <a href="tel:+61-426-119-544" class="g__links-dark">(+61) 426 119 544</a></p>
-                  </div>
-                </div>
+                        Phone: <a href="tel:+61-426-119-544" class="g__links-dark">(+61) 426 119 544</a></p>
+                    </div>                    
+                </div>                
             </div>
 
             <div class="footer__dev-container">
@@ -229,5 +233,11 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <!-- Font Awesome Scripts -->
+        <script src="https://kit.fontawesome.com/66b939b5ed.js" crossorigin="anonymous"></script>
+
+        <!-- Fancybox Scripts -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     </body>
 </html>
