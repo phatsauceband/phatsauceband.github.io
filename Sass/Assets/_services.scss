@@ -11,5 +11,9 @@
     }
     &__management{
         &-blurb{ padding: 2rem 0; }
+        &-logos{ 
+            width: 100%;
+            max-width: 200px;
+         }
     }
 }

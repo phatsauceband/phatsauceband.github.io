@@ -42,9 +42,8 @@ hr { border-top: 1px solid rgba($primary, .9) !important; } // Darker line for h
             stroke-linecap: round;
         }
     }
-    &__highlight{
-        fill: $primary;
-    }
+    &__highlight{ fill: rgba($primary, .75); }
+    &__primary{ fill: $primary; }
 }
 
 /* Bootstrap override to center videos with side spacing */
@@ -70,7 +69,7 @@ footer {
 
 .footer {
     &__panel{
-        padding-top: 2rem;
+        padding: 2rem 0;
         &-logo {
             // position: relative;            
             & img {
@@ -78,8 +77,7 @@ footer {
                 // top: 50%;
                 // left: 50%;
                 // transform: translate(-50%, -50%);
-                height: 6rem;
-                width: 6rem;
+                width: 7rem;
                 opacity: .8;
                 transition: all .2s;S
                 &:hover {
@@ -93,7 +91,7 @@ footer {
         & a {
             display: inline-block;
             position: relative;
-            margin: 0rem 0.75rem 0.5rem 0.75rem;
+            margin: 0rem 0.5rem 0.5rem 0.5rem;
             color: $primary;
             padding: .25rem;
             background: $light;
@@ -122,9 +120,21 @@ footer {
     &__dev {
         padding: .5rem 0rem;
         font-size: .6rem;
-        margin-top: 2rem;
-
         &-container { background-color: $secondary; }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .footer__ps-logo{
+        padding-top: 0;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 768px) {     
+    .footer__logos a{
+        margin: 0;
     }
 }
 
@@ -136,16 +146,13 @@ footer {
 
 .g {
     &__banner { // Covid Alert Banner - Overriding Bootstrap
-        position: fixed !important;
-        z-index: 1000;
+        top: 119px !important;
         width: 100% !important;
         color: white !important;
         border-radius: 0 !important;
         background-color: rgba($primary, 0.9) !important;
         border-color: rgba($primary, 0.9) !important;
-        &i{
-            font-size: 0.75rem;
-        }
+        margin-bottom: 0 !important;
     } 
 
     &__headers {
@@ -160,6 +167,25 @@ footer {
         &-stylisedlrg{
             font-family: 'Courgette', sans-serif;
             font-size: 1.3rem;
+        }
+    }
+
+    &__divider{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        &::before, &::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid rgb(90, 90, 90);
+        }
+        &::before {
+            margin-right: 1.5em;
+            margin-left: .5rem;
+        }
+        &::after {
+            margin-left: 1.5em;
+            margin-right: .5rem;
         }
     }
 

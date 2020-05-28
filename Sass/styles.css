@@ -38,6 +38,10 @@ hr {
 }
 
 .svg__highlight {
+  fill: rgba(95, 55, 130, 0.75);
+}
+
+.svg__primary {
   fill: #5F3782;
 }
 
@@ -54,12 +58,11 @@ footer {
 }
 
 .footer__panel {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .footer__panel-logo img {
-  height: 6rem;
-  width: 6rem;
+  width: 7rem;
   opacity: .8;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -73,7 +76,7 @@ S
 .footer__logos a {
   display: inline-block;
   position: relative;
-  margin: 0rem 0.75rem 0.5rem 0.75rem;
+  margin: 0rem 0.5rem 0.5rem 0.5rem;
   color: #5F3782;
   padding: .25rem;
   background: #fefefe;
@@ -106,25 +109,32 @@ S
 .footer__dev {
   padding: .5rem 0rem;
   font-size: .6rem;
-  margin-top: 2rem;
 }
 
 .footer__dev-container {
   background-color: #161616;
 }
 
+@media (min-width: 576px) {
+  .footer__ps-logo {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .footer__logos a {
+    margin: 0;
+  }
+}
+
 .g__banner {
-  position: fixed !important;
-  z-index: 1000;
+  top: 119px !important;
   width: 100% !important;
   color: white !important;
   border-radius: 0 !important;
   background-color: rgba(95, 55, 130, 0.9) !important;
   border-color: rgba(95, 55, 130, 0.9) !important;
-}
-
-.g__banneri {
-  font-size: 0.75rem;
+  margin-bottom: 0 !important;
 }
 
 .g__headers {
@@ -139,6 +149,34 @@ S
 .g__font-stylisedlrg {
   font-family: 'Courgette', sans-serif;
   font-size: 1.3rem;
+}
+
+.g__divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.g__divider::before, .g__divider::after {
+  content: '';
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom: 1px solid #5a5a5a;
+}
+
+.g__divider::before {
+  margin-right: 1.5em;
+  margin-left: .5rem;
+}
+
+.g__divider::after {
+  margin-left: 1.5em;
+  margin-right: .5rem;
 }
 
 .g__author {
@@ -347,8 +385,8 @@ S
 
 @media (min-width: 992px) {
   .i__landing-img {
-    height: calc(100vh - 100px - 0.5rem);
-    /* Change based on pixel height of logo in nav */
+    height: calc(100vh - 119px - 50px);
+    /* Change based on pixel height of nav & banner */
     width: 100%;
     overflow: hidden;
     background-image: url(../Images/landing-sml.png);
@@ -385,6 +423,11 @@ S
 
 .s__management-blurb {
   padding: 2rem 0;
+}
+
+.s__management-logos {
+  width: 100%;
+  max-width: 200px;
 }
 
 .r__row-container {
