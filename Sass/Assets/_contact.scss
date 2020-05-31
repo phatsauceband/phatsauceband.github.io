@@ -16,6 +16,16 @@
             img{ padding: 1rem; }
         }
     }
+    &__tiles{
+        &-img{ 
+            padding: 1rem; 
+            img{ width: 100%; }
+        }
+        &-text{
+            padding: 1rem;
+            p{ font-size: 1em; }
+        }
+    }
     &__testimonials{
         h4{
             padding:  2rem 0;

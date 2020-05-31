@@ -6,11 +6,11 @@ $primary-dark: #472466;
 $secondary: #161616;
 $light: #fefefe;
 
-$link__light: rgb(170, 75, 170);
-$link__light-hover: rgb(200, 135, 215);
+$link__light: $primary;
+$link__light-hover: rgba($primary, 0.75);
 
-$link__dark: lightgrey;
-$link__dark-hover: grey;
+$link__dark: rgb(225, 190, 255);
+$link__dark-hover: rgb(187, 140, 201);
 
 $btn: black;
 
@@ -18,13 +18,14 @@ $author: grey;
 
 // Mixins
 @mixin links($colour, $colour-hover){
-    text-decoration: none;
+    text-decoration: underline !important;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    color: $colour;
+    color: $colour !important;
     border-radius: 2px;
     &:hover{
-        text-decoration: none;
-        color: $colour-hover;
+        // text-decoration: none;
+        color: $colour-hover !important;
     }
     // &:active{}
     &:focus{

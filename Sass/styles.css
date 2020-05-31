@@ -142,12 +142,7 @@ S
   overflow: hidden;
 }
 
-.g__font-stylised {
-  font-family: 'Courgette', sans-serif;
-}
-
 .g__font-stylisedlrg {
-  font-family: 'Courgette', sans-serif;
   font-size: 1.3rem;
 }
 
@@ -248,16 +243,15 @@ S
 }
 
 .g__links-dark {
-  text-decoration: none;
+  text-decoration: underline !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  color: lightgrey;
+  color: #e1beff !important;
   border-radius: 2px;
 }
 
 .g__links-dark:hover {
-  text-decoration: none;
-  color: grey;
+  color: #bb8cc9 !important;
 }
 
 .g__links-dark:focus {
@@ -265,16 +259,15 @@ S
 }
 
 .g__links-light {
-  text-decoration: none;
+  text-decoration: underline !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  color: #aa4baa;
+  color: #5F3782 !important;
   border-radius: 2px;
 }
 
 .g__links-light:hover {
-  text-decoration: none;
-  color: #c887d7;
+  color: rgba(95, 55, 130, 0.75) !important;
 }
 
 .g__links-light:focus {
@@ -315,6 +308,13 @@ S
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0rem 1rem !important;
   }
+}
+
+.close:hover {
+  color: #dadada !important;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  text-shadow: 3px 3px #474707;
 }
 
 .i__landing-arrow {
@@ -418,7 +418,7 @@ S
 }
 
 .s__tiles-text p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .s__management-blurb {
@@ -482,7 +482,7 @@ S
 }
 
 .t__cards p {
-  padding: 1.5rem;
+  padding: 3rem;
 }
 
 .t__pv-container img {
@@ -537,6 +537,22 @@ S
 
 .c__brands-container img {
   padding: 1rem;
+}
+
+.c__tiles-img {
+  padding: 1rem;
+}
+
+.c__tiles-img img {
+  width: 100%;
+}
+
+.c__tiles-text {
+  padding: 1rem;
+}
+
+.c__tiles-text p {
+  font-size: 1em;
 }
 
 .c__testimonials h4 {

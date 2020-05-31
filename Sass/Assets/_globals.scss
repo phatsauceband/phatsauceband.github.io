@@ -161,11 +161,11 @@ footer {
     }
 
     &__font {
-        &-stylised{
-            font-family: 'Courgette', sans-serif;
-        }
+        // &-stylised{
+        //     font-family: 'Courgette', sans-serif;
+        // }
         &-stylisedlrg{
-            font-family: 'Courgette', sans-serif;
+            // font-family: 'Courgette', sans-serif;
             font-size: 1.3rem;
         }
     }
@@ -223,5 +223,12 @@ footer {
     .navbar-expand-lg .navbar-nav .nav-link{
         padding: 0rem 1rem !important;
     }
+}
+
+.close:hover{
+    color: rgb(218, 218, 218) !important;
+    -webkit-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    text-shadow: 3px 3px rgb(71, 71, 7) ;
 }
 
