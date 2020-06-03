@@ -22,6 +22,17 @@ nav {
   color: black !important;
 }
 
+.nav__hamburger {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
 hr {
   border-top: 1px solid rgba(95, 55, 130, 0.9) !important;
 }
@@ -135,6 +146,7 @@ S
   background-color: rgba(95, 55, 130, 0.9) !important;
   border-color: rgba(95, 55, 130, 0.9) !important;
   margin-bottom: 0 !important;
+  z-index: 1000 !important;
 }
 
 .g__headers {
@@ -397,9 +409,6 @@ S
   .i__landing-img img {
     display: none;
   }
-}
-
-@media (min-width: 992px) {
   .i__blurb-summary h1 {
     font-size: 2rem;
   }
@@ -563,5 +572,25 @@ S
 .c__testimonials p {
   margin: 0;
   padding: 0 0 2rem 0;
+}
+
+@media (max-width: 992px) {
+  .c__brands-container img {
+    width: 150px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .c__brands-container img {
+    width: 120px;
+    padding: 0.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .c__contact-header {
+    font-size: 3rem !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

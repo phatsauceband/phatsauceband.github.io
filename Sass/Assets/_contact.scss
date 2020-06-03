@@ -37,3 +37,28 @@
         }
     }
 }
+
+@media (max-width: 992px) { 
+    .c__brands-container{
+        img{
+            width: 150px;
+            padding: 0.5rem;
+        }
+    }
+ }
+
+ @media (max-width: 576px) { 
+    .c__brands-container{
+        img{
+            width: 120px;
+            padding: 0.125rem;
+        }
+    }
+ }
+
+ 
+@media (max-width: 768px) { 
+    .c__contact-header{
+        font-size: 3rem !important;
+    }
+ }

@@ -28,6 +28,14 @@ nav {
         font-weight: 500;
         color: black !important; 
     }
+
+    //TEMP FOR WATCH NOW BUTTON
+    &__hamburger{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 hr { border-top: 1px solid rgba($primary, .9) !important; } // Darker line for hr 
@@ -153,6 +161,7 @@ footer {
         background-color: rgba($primary, 0.9) !important;
         border-color: rgba($primary, 0.9) !important;
         margin-bottom: 0 !important;
+        z-index: 1000 !important;
     } 
 
     &__headers {
