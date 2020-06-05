@@ -190,6 +190,10 @@ S
   color: grey;
 }
 
+.g__btn-spacer {
+  margin: 0.5rem 0rem 0.75rem;
+}
+
 .g__btn-outline {
   color: black !important;
   border-color: black !important;

@@ -199,6 +199,7 @@ footer {
     }
 
     &__author { color: $author; }
+    &__btn-spacer { margin: 0.5rem 0rem 0.75rem; }
     &__btn-outline { @include btn-outline($btn); }
     &__bg-primary { background-color: rgba($primary, .125) !important; }
     &__btn-primaryoutline { @include btn-outline($primary); }
