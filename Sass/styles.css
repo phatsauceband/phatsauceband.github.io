@@ -316,6 +316,10 @@ S
   }
 }
 
+.fa-padding {
+  padding-right: 0.5rem;
+}
+
 .navbar-light .navbar-toggler {
   border-color: rgba(0, 0, 0, 0) !important;
 }
