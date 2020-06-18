@@ -13,10 +13,6 @@ nav {
   color: #5F3782 !important;
 }
 
-.nav__watch-btn {
-  margin-right: 0.75rem;
-}
-
 .nav__active {
   font-weight: 500;
   color: black !important;
@@ -335,6 +331,18 @@ S
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
   text-shadow: 3px 3px #474707;
+}
+
+@media (max-width: 1200px) {
+  .nav-link {
+    font-size: 0.825rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav__watch-btn {
+    margin-right: 0.75rem;
+  }
 }
 
 .i__landing-arrow {

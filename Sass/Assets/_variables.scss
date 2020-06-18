@@ -1,7 +1,5 @@
 // COLOURS
-
 $primary: #5F3782;
-// $primary: rgb(130, 90, 160);
 $primary-dark: #472466;
 $secondary: #161616;
 $light: #fefefe;
@@ -24,15 +22,11 @@ $author: grey;
     color: $colour !important;
     border-radius: 2px;
     &:hover{
-        // text-decoration: none;
         color: $colour-hover !important;
     }
-    // &:active{}
     &:focus{
         text-decoration: none;
-        // box-shadow: 0 0 0 2px rgba($colour, .25);
     }
-    // &:visited{}
 }
 
 @mixin btn-outline($colour){
