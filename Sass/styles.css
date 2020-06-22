@@ -447,12 +447,22 @@ S
 }
 
 .s__management-blurb {
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 }
 
 .s__management-logos {
   width: 100%;
   max-width: 200px;
+}
+
+.s__videos {
+  margin-top: 2rem;
+}
+
+@media (min-width: 576px) {
+  .s__videos {
+    max-width: 40% !important;
+  }
 }
 
 .r__row-container {
