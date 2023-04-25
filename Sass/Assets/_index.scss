@@ -55,7 +55,7 @@
 
 @media(min-width: 992px){ // On larger devices, fullscreen landing
     .i__landing-img{
-        height: calc(100vh - 119px - 50px); /* Change based on pixel height of nav & banner */
+        height: calc(100vh - 119px); /* Change based on pixel height of nav & banner */
         width: 100%;
         overflow: hidden;
         background-image: url(../Images/landing-sml.png);
